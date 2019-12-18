@@ -115,7 +115,7 @@ class ProductProvider extends React.Component {
             ); 
         }
 
-    }
+    } 
     removeItem = id => {
         let tempProducts = [...this.state.products];
         let tempCart = [...this.state.cart];

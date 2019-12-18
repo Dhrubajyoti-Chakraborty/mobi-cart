@@ -4,12 +4,12 @@ import CartColumns from './CartColumns';
 import EmptyCart from "./EmptyCart";
 import {ProductConsumer} from '../../context';
 import CartList  from './CartList'
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import CartTotals from './CartTotals';
 
 
 
-class Cart extends React.Component {
+class Store extends React.Component {
 
 
     render() {
@@ -25,7 +25,7 @@ class Cart extends React.Component {
                              
                              <CartColumns />
                              <CartList value={value} />
-                             <CartTotals value={value} />
+                             <CartTotals value={value} history={this.props.history} />
                              </React.Fragment>
                       );
                   } else {
@@ -44,4 +44,4 @@ class Cart extends React.Component {
 
 
 
-export default Cart;
+export default Store;
